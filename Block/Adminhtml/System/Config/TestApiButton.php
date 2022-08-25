@@ -18,7 +18,7 @@ class TestApiButton extends Field
     {
         parent::_prepareLayout();
         if (!$this->getTemplate()) {
-            $this->setTemplate('Doddle_Returns::system/config/test_api_button.phtml');
+            $this->setTemplate('AustraliaPost_Returns::system/config/test_api_button.phtml');
         }
         return $this;
     }

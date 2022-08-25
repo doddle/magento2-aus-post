@@ -128,8 +128,8 @@ class UpgradeData implements UpgradeDataInterface
             Integration::NAME => DataHelper::INTEGRATION_NAME,
             'resource' => [
                 'Magento_Backend::admin',
-                'Doddle_Returns::returns',
-                'Doddle_Returns::variations'
+                'AustraliaPost_Returns::returns',
+                'AustraliaPost_Returns::variations'
             ]
         ]);
     }

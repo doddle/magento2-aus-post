@@ -4,7 +4,7 @@
     <route url="/V1/doddle_returns/product_variants/:sku" method="GET">
         <service class="Doddle\Returns\Api\ProductVariationListInterface" method="getItems"/>
         <resources>
-            <resource ref="Doddle_Returns::variations" />
+            <resource ref="AustraliaPost_Returns::variations" />
         </resources>
     </route>
 </routes>

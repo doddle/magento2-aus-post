@@ -37,7 +37,7 @@ define([
                         if (response.access_token) {
                             $('button', this.element).attr('disabled', false);
                             $('.note', this.element).html(
-                                $.mage.__('Clicking this button will queue all existing unsynched orders to be synched with Doddle (limited to a set number of days back from today if supplied).')
+                                $.mage.__('Clicking this button will queue all existing unsynched orders to be synched with Australia Post (limited to a set number of days back from today if supplied).')
                             );
                         }
                     }

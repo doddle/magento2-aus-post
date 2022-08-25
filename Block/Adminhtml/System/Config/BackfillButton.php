@@ -18,7 +18,7 @@ class BackfillButton extends Field
     {
         parent::_prepareLayout();
         if (!$this->getTemplate()) {
-            $this->setTemplate('Doddle_Returns::system/config/backfill_button.phtml');
+            $this->setTemplate('AustraliaPost_Returns::system/config/backfill_button.phtml');
         }
         return $this;
     }
