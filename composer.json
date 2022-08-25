@@ -1,6 +1,6 @@
 {
-    "name": "doddle/magento2-returns",
-    "description": "Doddle Returns Magento2 module.",
+    "name": "doddle/magento2-australia-post-returns",
+    "description": "Australia Post Returns Magento2 module.",
     "type": "magento2-module",
     "version": "2.0.1",
     "license": "proprietary",

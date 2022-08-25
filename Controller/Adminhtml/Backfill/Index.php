@@ -17,7 +17,7 @@ use Magento\Sales\Model\ResourceModel\Order\CollectionFactory as OrderCollection
 
 class Index extends Action implements HttpGetActionInterface
 {
-    public const ADMIN_RESOURCE = 'Doddle_Returns::backfill';
+    public const ADMIN_RESOURCE = 'AustraliaPost_Returns::backfill';
 
     /** @var DataHelper */
     private $dataHelper;
