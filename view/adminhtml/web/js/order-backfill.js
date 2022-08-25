@@ -4,7 +4,7 @@ define([
 ], function ($) {
     'use strict';
 
-    $.widget('doddle.orderBackfill', {
+    $.widget('australiapost.orderBackfill', {
         options: {
             buttonId: '',
             buttonLabel: '',
@@ -22,11 +22,11 @@ define([
             window.location.assign(url);
         },
         _checkCanDisplay: function () {
-            var apiKey = $('#doddle_returns_api_key').val();
-            var apiSecret = $('#doddle_returns_api_secret').val();
+            var apiKey = $('#australiapost_returns_api_key').val();
+            var apiSecret = $('#australiapost_returns_api_secret').val();
             var basicString = btoa(apiKey + ':' + apiSecret);
-            var apiMode = $('#doddle_returns_api_mode').val();
-            var apiUrlSelector = apiMode == 'live' ? '#doddle_returns_api_live_url' : '#doddle_returns_api_test_url';
+            var apiMode = $('#australiapost_returns_api_mode').val();
+            var apiUrlSelector = apiMode == 'live' ? '#australiapost_returns_api_live_url' : '#australiapost_returns_api_test_url';
             var apiUrl = $(apiUrlSelector).val();
 
             var xhr = new XMLHttpRequest();
@@ -51,5 +51,5 @@ define([
         }
     });
 
-    return $.doddle.orderBackfill;
+    return $.australiapost.orderBackfill;
 });

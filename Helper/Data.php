@@ -14,24 +14,24 @@ class Data extends AbstractHelper
     private $productMetadata;
 
     // Database Tables
-    public const DB_TABLE_ORDER_QUEUE = 'doddle_returns_order_sync_queue';
+    public const DB_TABLE_ORDER_QUEUE = 'australiapost_returns_order_sync_queue';
 
     // Attributes
-    public const ATTRIBUTE_CODE_RETURNS_ELIGIBILITY = 'doddle_returns_excluded';
+    public const ATTRIBUTE_CODE_RETURNS_ELIGIBILITY = 'australiapost_returns_excluded';
 
     // Integrations
     public const INTEGRATION_NAME = 'AustraliaPost Returns';
 
     // Config
-    private const XML_PATH_API_KEY               = 'doddle_returns/api/key';
-    private const XML_PATH_API_SECRET            = 'doddle_returns/api/secret';
-    private const XML_PATH_API_MODE              = 'doddle_returns/api/mode';
-    private const XML_PATH_API_LIVE_URL          = 'doddle_returns/api/live_url';
-    private const XML_PATH_API_TEST_URL          = 'doddle_returns/api/test_url';
-    private const XML_PATH_COMPANY_ID            = 'doddle_returns/order_sync/company_id';
-    private const XML_PATH_ORDER_SYNC_ENABLED    = 'doddle_returns/order_sync/enabled';
-    private const XML_PATH_ORDER_SYNC_BATCH_SIZE = 'doddle_returns/order_sync/batch_size';
-    private const XML_PATH_ORDER_SYNC_MAX_FAILS  = 'doddle_returns/order_sync/max_fails';
+    private const XML_PATH_API_KEY               = 'australiapost_returns/api/key';
+    private const XML_PATH_API_SECRET            = 'australiapost_returns/api/secret';
+    private const XML_PATH_API_MODE              = 'australiapost_returns/api/mode';
+    private const XML_PATH_API_LIVE_URL          = 'australiapost_returns/api/live_url';
+    private const XML_PATH_API_TEST_URL          = 'australiapost_returns/api/test_url';
+    private const XML_PATH_COMPANY_ID            = 'australiapost_returns/order_sync/company_id';
+    private const XML_PATH_ORDER_SYNC_ENABLED    = 'australiapost_returns/order_sync/enabled';
+    private const XML_PATH_ORDER_SYNC_BATCH_SIZE = 'australiapost_returns/order_sync/batch_size';
+    private const XML_PATH_ORDER_SYNC_MAX_FAILS  = 'australiapost_returns/order_sync/max_fails';
 
     /**
      * @param Context $context

@@ -10,7 +10,7 @@
         <arguments>
             <argument name="name" xsi:type="string">Australia Post Returns</argument>
             <argument name="handlers" xsi:type="array">
-                <item name="doddle" xsi:type="object">AustraliaPost\Returns\Logger\Handler\Doddle</item>
+                <item name="australiapost" xsi:type="object">AustraliaPost\Returns\Logger\Handler\AustraliaPost</item>
             </argument>
         </arguments>
     </virtualType>

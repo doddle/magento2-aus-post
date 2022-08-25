@@ -5,7 +5,7 @@ define([
 ], function ($, alert) {
     'use strict';
 
-    $.widget('doddle.apiTest', {
+    $.widget('australiapost.apiTest', {
         options: {
             buttonId: '',
             buttonLabel: '',
@@ -18,14 +18,14 @@ define([
             });
         },
         _testApi: function () {
-            var apiKey = $('#doddle_returns_api_key').val();
-            var apiSecret = $('#doddle_returns_api_secret').val();
+            var apiKey = $('#australiapost_returns_api_key').val();
+            var apiSecret = $('#australiapost_returns_api_secret').val();
             var basicString = btoa(apiKey + ':' + apiSecret);
 
             $('span', this.element).html($.mage.__('Testing Connection...'));
 
-            var apiMode = $('#doddle_returns_api_mode').val();
-            var apiUrlSelector = apiMode == 'live' ? '#doddle_returns_api_live_url' : '#doddle_returns_api_test_url';
+            var apiMode = $('#australiapost_returns_api_mode').val();
+            var apiUrlSelector = apiMode == 'live' ? '#australiapost_returns_api_live_url' : '#australiapost_returns_api_test_url';
             var apiUrl = $(apiUrlSelector).val();
 
             var xhr = new XMLHttpRequest();
@@ -56,5 +56,5 @@ define([
         }
     });
 
-    return $.doddle.apiTest;
+    return $.australiapost.apiTest;
 });
