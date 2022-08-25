@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Doddle\Returns\Api\Data\OrderQueueInterface" type="Doddle\Returns\Model\OrderQueue" />
-    <preference for="Doddle\Returns\Api\OrderQueueRepositoryInterface" type="Doddle\Returns\Model\OrderQueueRepository" />
-    <preference for="Doddle\Returns\Api\ProductVariationListInterface" type="Doddle\Returns\Model\Product\VariationProvider" />
-    <preference for="Doddle\Returns\Api\Data\Product\VariationInterface" type="Doddle\Returns\Model\Product\Variation" />
-    <preference for="Doddle\Returns\Api\Data\Product\VariationAttributeInterface" type="Doddle\Returns\Model\Product\VariationAttribute" />
+    <preference for="AustraliaPost\Returns\Api\Data\OrderQueueInterface" type="AustraliaPost\Returns\Model\OrderQueue" />
+    <preference for="AustraliaPost\Returns\Api\OrderQueueRepositoryInterface" type="AustraliaPost\Returns\Model\OrderQueueRepository" />
+    <preference for="AustraliaPost\Returns\Api\ProductVariationListInterface" type="AustraliaPost\Returns\Model\Product\VariationProvider" />
+    <preference for="AustraliaPost\Returns\Api\Data\Product\VariationInterface" type="AustraliaPost\Returns\Model\Product\Variation" />
+    <preference for="AustraliaPost\Returns\Api\Data\Product\VariationAttributeInterface" type="AustraliaPost\Returns\Model\Product\VariationAttribute" />
 
-    <virtualType name="DoddleReturnsLogger" type="Monolog\Logger">
+    <virtualType name="AustraliaPostReturnsLogger" type="Monolog\Logger">
         <arguments>
-            <argument name="name" xsi:type="string">Doddle Returns</argument>
+            <argument name="name" xsi:type="string">Australia Post Returns</argument>
             <argument name="handlers" xsi:type="array">
-                <item name="doddle" xsi:type="object">Doddle\Returns\Logger\Handler\Doddle</item>
+                <item name="doddle" xsi:type="object">AustraliaPost\Returns\Logger\Handler\Doddle</item>
             </argument>
         </arguments>
     </virtualType>
 
-    <type name="Doddle\Returns\Cron\OrderSyncQueue">
+    <type name="AustraliaPost\Returns\Cron\OrderSyncQueue">
         <arguments>
-            <argument name="logger" xsi:type="object">DoddleReturnsLogger</argument>
+            <argument name="logger" xsi:type="object">AustraliaPostReturnsLogger</argument>
         </arguments>
     </type>
 </config>

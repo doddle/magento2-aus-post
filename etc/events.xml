@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
     <event name="sales_order_save_after">
-        <observer name="doddle_returns_sales_order_save_after_handler" instance="Doddle\Returns\Observer\AfterSaveOrder" />
+        <observer name="doddle_returns_sales_order_save_after_handler" instance="AustraliaPost\Returns\Observer\AfterSaveOrder" />
     </event>
     <event name="order_cancel_after">
-        <observer name="doddle_returns_sales_order_cancel" instance="Doddle\Returns\Observer\AfterCancelOrder" />
+        <observer name="doddle_returns_sales_order_cancel" instance="AustraliaPost\Returns\Observer\AfterCancelOrder" />
     </event>
     <event name="admin_sales_order_address_update">
-        <observer name="doddle_returns_sales_order_update" instance="Doddle\Returns\Observer\AfterUpdateOrder" />
+        <observer name="doddle_returns_sales_order_update" instance="AustraliaPost\Returns\Observer\AfterUpdateOrder" />
     </event>
 </config>

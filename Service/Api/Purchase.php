@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Service\Api;
+namespace AustraliaPost\Returns\Service\Api;
 
-use Doddle\Returns\Helper\Data as DataHelper;
-use Doddle\Returns\Helper\ValidateField;
+use AustraliaPost\Returns\Helper\Data as DataHelper;
+use AustraliaPost\Returns\Helper\ValidateField;
 use Magento\Catalog\Api\Data\CategoryInterface;
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Helper\Image as ImageHelper;

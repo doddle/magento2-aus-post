@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Setup;
+namespace AustraliaPost\Returns\Setup;
 
 use Magento\Framework\Setup\UpgradeDataInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
@@ -14,7 +14,7 @@ use Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface;
 use Magento\Eav\Setup\EavSetup;
 use Magento\Eav\Setup\EavSetupFactory;
 use Magento\Catalog\Model\Product;
-use Doddle\Returns\Helper\Data as DataHelper;
+use AustraliaPost\Returns\Helper\Data as DataHelper;
 
 class UpgradeData implements UpgradeDataInterface
 {
@@ -95,10 +95,10 @@ class UpgradeData implements UpgradeDataInterface
             Product::ENTITY,
             DataHelper::ATTRIBUTE_CODE_RETURNS_ELIGIBILITY,
             [
-                'label' => 'Exclude from Doddle Returns',
-                'group' => 'Doddle Returns',
-                'note' => 'Products flagged as excluded will not be available to return via Doddle Returns.',
-                'backend' => \Doddle\Returns\Model\Product\Attribute\Backend\Boolean::class,
+                'label' => 'Exclude from Australia Post Returns',
+                'group' => 'Australia Post Returns',
+                'note' => 'Products flagged as excluded will not be available to return via Australia Post Returns.',
+                'backend' => \AustraliaPost\Returns\Model\Product\Attribute\Backend\Boolean::class,
                 'frontend' => '',
                 'input' => 'select',
                 'class' => '',

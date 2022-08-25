@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Cron;
+namespace AustraliaPost\Returns\Cron;
 
-use Doddle\Returns\Api\Data\OrderQueueInterface;
-use Doddle\Returns\Api\OrderQueueRepositoryInterface;
-use Doddle\Returns\Helper\Api as ApiHelper;
-use Doddle\Returns\Helper\Data as DataHelper;
-use Doddle\Returns\Model\ResourceModel\OrderQueue\Collection as OrderQueueCollection;
-use Doddle\Returns\Model\ResourceModel\OrderQueue\CollectionFactory as OrderQueueCollectionFactory;
-use Doddle\Returns\Service\Api\Purchase as PurchaseApiService;
+use AustraliaPost\Returns\Api\Data\OrderQueueInterface;
+use AustraliaPost\Returns\Api\OrderQueueRepositoryInterface;
+use AustraliaPost\Returns\Helper\Api as ApiHelper;
+use AustraliaPost\Returns\Helper\Data as DataHelper;
+use AustraliaPost\Returns\Model\ResourceModel\OrderQueue\Collection as OrderQueueCollection;
+use AustraliaPost\Returns\Model\ResourceModel\OrderQueue\CollectionFactory as OrderQueueCollectionFactory;
+use AustraliaPost\Returns\Service\Api\Purchase as PurchaseApiService;
 use Magento\Sales\Api\Data\OrderInterface;
 use Magento\Sales\Model\Order;
 use Magento\Sales\Model\ResourceModel\Order\Collection as OrderCollection;

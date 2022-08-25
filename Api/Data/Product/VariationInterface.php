@@ -1,5 +1,5 @@
 <?php
-namespace Doddle\Returns\Api\Data\Product;
+namespace AustraliaPost\Returns\Api\Data\Product;
 
 interface VariationInterface
 {
@@ -89,15 +89,15 @@ interface VariationInterface
     /**
      * Get product attributes
      *
-     * @return \Doddle\Returns\Api\Data\Product\VariationAttributeInterface[]
+     * @return \AustraliaPost\Returns\Api\Data\Product\VariationAttributeInterface[]
      */
     public function getAttributes();
 
     /**
      * Set product attributes
      *
-     * @param \Doddle\Returns\Api\Data\Product\VariationAttributeInterface[] $attributes
-     * @return \Doddle\Returns\Api\Data\Product\VariationAttributeInterface[]
+     * @param \AustraliaPost\Returns\Api\Data\Product\VariationAttributeInterface[] $attributes
+     * @return \AustraliaPost\Returns\Api\Data\Product\VariationAttributeInterface[]
      */
     public function setAttributes($attributes);
 

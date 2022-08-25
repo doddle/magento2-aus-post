@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Model\Product;
+namespace AustraliaPost\Returns\Model\Product;
 
-use Doddle\Returns\Api\Data\Product\VariationAttributeInterface;
-use Doddle\Returns\Api\Data\Product\VariationAttributeInterfaceFactory;
-use Doddle\Returns\Api\Data\Product\VariationInterface;
-use Doddle\Returns\Api\Data\Product\VariationInterfaceFactory;
-use Doddle\Returns\Api\ProductVariationListInterface;
-use Doddle\Returns\Helper\Data as DataHelper;
+use AustraliaPost\Returns\Api\Data\Product\VariationAttributeInterface;
+use AustraliaPost\Returns\Api\Data\Product\VariationAttributeInterfaceFactory;
+use AustraliaPost\Returns\Api\Data\Product\VariationInterface;
+use AustraliaPost\Returns\Api\Data\Product\VariationInterfaceFactory;
+use AustraliaPost\Returns\Api\ProductVariationListInterface;
+use AustraliaPost\Returns\Helper\Data as DataHelper;
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Api\ProductRepositoryInterface;
 use Magento\Catalog\Model\Product\Attribute\Source\Status as ProductStatus;

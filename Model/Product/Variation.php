@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Model\Product;
+namespace AustraliaPost\Returns\Model\Product;
 
 use Magento\Framework\Model\AbstractModel;
-use Doddle\Returns\Api\Data\Product\VariationInterface;
+use AustraliaPost\Returns\Api\Data\Product\VariationInterface;
 
 class Variation extends AbstractModel implements VariationInterface
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Doddle\Returns\Api;
+namespace AustraliaPost\Returns\Api;
 
 interface ProductVariationListInterface
 {
@@ -7,7 +7,7 @@ interface ProductVariationListInterface
      * Retrieve information about sibling variants of a configurable product's child sku
      *
      * @param string $sku
-     * @return \Doddle\Returns\Api\Data\Product\VariationInterface[]
+     * @return \AustraliaPost\Returns\Api\Data\Product\VariationInterface[]
      */
     public function getItems($sku);
 }

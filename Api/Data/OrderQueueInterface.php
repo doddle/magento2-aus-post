@@ -1,5 +1,5 @@
 <?php
-namespace Doddle\Returns\Api\Data;
+namespace AustraliaPost\Returns\Api\Data;
 
 interface OrderQueueInterface
 {

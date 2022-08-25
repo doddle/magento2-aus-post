@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Setup;
+namespace AustraliaPost\Returns\Setup;
 
 use Magento\Framework\Setup\UpgradeSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\SchemaSetupInterface;
 use Magento\Framework\DB\Ddl\Table;
 use Magento\Framework\DB\Adapter\AdapterInterface;
-use Doddle\Returns\Helper\Data as DataHelper;
-use Doddle\Returns\Api\Data\OrderQueueInterface;
+use AustraliaPost\Returns\Helper\Data as DataHelper;
+use AustraliaPost\Returns\Api\Data\OrderQueueInterface;
 
 class UpgradeSchema implements UpgradeSchemaInterface
 {
@@ -92,7 +92,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
                 Table::TYPE_TEXT,
                 null,
                 [],
-                'Doddle Order ID'
+                'AustraliaPost Order ID'
             )->addColumn(
                 OrderQueueInterface::CREATED_AT,
                 Table::TYPE_TIMESTAMP,
@@ -134,7 +134,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
                 'entity_id',
                 \Magento\Framework\DB\Ddl\Table::ACTION_CASCADE
             )
-            ->setComment('Doddle Returns order push queue');
+            ->setComment('AustraliaPost Returns order push queue');
 
         $this->connection->createTable($table);
     }

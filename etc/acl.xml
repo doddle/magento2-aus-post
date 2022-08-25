@@ -3,14 +3,14 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="AustraliaPost_Returns::returns" title="Doddle Returns" translate="title" sortOrder="30">
+                <resource id="AustraliaPost_Returns::returns" title="Australia Post Returns" translate="title" sortOrder="30">
                     <resource id="AustraliaPost_Returns::variations" title="Product Variations" translate="title" sortOrder="10" />
                     <resource id="AustraliaPost_Returns::backfill" title="Backfill Orders" translate="title" sortOrder="20" />
                 </resource>
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="AustraliaPost_Returns::config" title="Doddle Returns Section" translate="title" />
+                            <resource id="AustraliaPost_Returns::config" title="Australia Post Returns Section" translate="title" />
                         </resource>
                     </resource>
                 </resource>

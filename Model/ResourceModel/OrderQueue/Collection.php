@@ -1,9 +1,9 @@
 <?php
-namespace Doddle\Returns\Model\ResourceModel\OrderQueue;
+namespace AustraliaPost\Returns\Model\ResourceModel\OrderQueue;
 
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
-use Doddle\Returns\Model\OrderQueue;
-use Doddle\Returns\Model\ResourceModel\OrderQueue as OrderQueueResource;
+use AustraliaPost\Returns\Model\OrderQueue;
+use AustraliaPost\Returns\Model\ResourceModel\OrderQueue as OrderQueueResource;
 
 class Collection extends AbstractCollection
 {

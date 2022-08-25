@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Model;
+namespace AustraliaPost\Returns\Model;
 
 use Magento\Wishlist\Model\WishlistFactory;
-use Doddle\Returns\Api\OrderQueueRepositoryInterface;
-use Doddle\Returns\Api\Data\OrderQueueInterface;
+use AustraliaPost\Returns\Api\OrderQueueRepositoryInterface;
+use AustraliaPost\Returns\Api\Data\OrderQueueInterface;
 
 class OrderQueueRepository implements OrderQueueRepositoryInterface
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Doddle\Returns\Api\Data\Product;
+namespace AustraliaPost\Returns\Api\Data\Product;
 
 interface VariationAttributeInterface
 {

@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Model\ResourceModel;
+namespace AustraliaPost\Returns\Model\ResourceModel;
 
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 use Magento\Framework\Model\AbstractModel;
-use Doddle\Returns\Api\Data\OrderQueueInterface;
-use Doddle\Returns\Helper\Data as DataHelper;
+use AustraliaPost\Returns\Api\Data\OrderQueueInterface;
+use AustraliaPost\Returns\Helper\Data as DataHelper;
 
 class OrderQueue extends AbstractDb
 {

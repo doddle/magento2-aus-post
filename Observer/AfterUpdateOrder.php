@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Observer;
+namespace AustraliaPost\Returns\Observer;
 
-use Doddle\Returns\Api\Data\OrderQueueInterface;
-use Doddle\Returns\Api\Data\OrderQueueInterfaceFactory;
-use Doddle\Returns\Api\OrderQueueRepositoryInterface;
-use Doddle\Returns\Model\OrderQueue;
+use AustraliaPost\Returns\Api\Data\OrderQueueInterface;
+use AustraliaPost\Returns\Api\Data\OrderQueueInterfaceFactory;
+use AustraliaPost\Returns\Api\OrderQueueRepositoryInterface;
+use AustraliaPost\Returns\Model\OrderQueue;
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
 use Magento\Sales\Api\Data\OrderInterface;

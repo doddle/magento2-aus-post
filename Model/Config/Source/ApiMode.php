@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Model\Config\Source;
+namespace AustraliaPost\Returns\Model\Config\Source;
 
 use Magento\Framework\Option\ArrayInterface;
 

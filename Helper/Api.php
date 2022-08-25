@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Helper;
+namespace AustraliaPost\Returns\Helper;
 
-use Doddle\Returns\Helper\Data as DataHelper;
-use Doddle\Returns\Model\Config\Source\ApiMode;
+use AustraliaPost\Returns\Helper\Data as DataHelper;
+use AustraliaPost\Returns\Model\Config\Source\ApiMode;
 use Magento\Framework\App\Helper\AbstractHelper;
 use Magento\Framework\App\Helper\Context;
 use Magento\Framework\Exception\AuthorizationException;
 use Magento\Framework\Exception\RemoteServiceUnavailableException;
-use Doddle\Returns\Model\HTTP\Client\CurlFactory;
-use Doddle\Returns\Model\HTTP\Client\Curl;
+use AustraliaPost\Returns\Model\HTTP\Client\CurlFactory;
+use AustraliaPost\Returns\Model\HTTP\Client\Curl;
 use Magento\Framework\Serialize\Serializer\Json;
 
 class Api extends AbstractHelper

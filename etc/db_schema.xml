@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
-  <table name="doddle_returns_order_sync_queue" resource="default" engine="innodb" comment="Doddle Returns order push queue">
+  <table name="doddle_returns_order_sync_queue" resource="default" engine="innodb" comment="Australia Post Returns order push queue">
     <column xsi:type="int" name="sync_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Order sync queue ID"/>
     <column xsi:type="int" name="order_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Magento order ID"/>
     <column xsi:type="varchar" name="status" nullable="false" length="255" default="pending" comment="Order push status"/>

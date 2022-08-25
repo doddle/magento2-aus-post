@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Setup\Patch\Data;
+namespace AustraliaPost\Returns\Setup\Patch\Data;
 
 use Magento\Integration\Api\IntegrationServiceInterface;
 use Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface;
@@ -10,7 +10,7 @@ use Magento\Eav\Setup\EavSetupFactory;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 use Magento\Catalog\Model\Product;
-use Doddle\Returns\Helper\Data as DataHelper;
+use AustraliaPost\Returns\Helper\Data as DataHelper;
 use Magento\Integration\Model\Integration;
 
 class AddReturnsIntegration implements DataPatchInterface

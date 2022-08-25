@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Helper;
+namespace AustraliaPost\Returns\Helper;
 
 class ValidateField
 {

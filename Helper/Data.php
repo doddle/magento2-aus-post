@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Helper;
+namespace AustraliaPost\Returns\Helper;
 
 use Magento\Framework\App\Helper\AbstractHelper;
 use Magento\Framework\App\Helper\Context;
@@ -20,7 +20,7 @@ class Data extends AbstractHelper
     public const ATTRIBUTE_CODE_RETURNS_ELIGIBILITY = 'doddle_returns_excluded';
 
     // Integrations
-    public const INTEGRATION_NAME = 'Doddle Returns';
+    public const INTEGRATION_NAME = 'AustraliaPost Returns';
 
     // Config
     private const XML_PATH_API_KEY               = 'doddle_returns/api/key';

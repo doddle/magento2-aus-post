@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Setup\Patch\Data;
+namespace AustraliaPost\Returns\Setup\Patch\Data;
 
 use Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface;
 use Magento\Eav\Setup\EavSetup;
@@ -9,7 +9,7 @@ use Magento\Eav\Setup\EavSetupFactory;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 use Magento\Catalog\Model\Product;
-use Doddle\Returns\Helper\Data as DataHelper;
+use AustraliaPost\Returns\Helper\Data as DataHelper;
 
 class AddReturnsEligibilityAttribute implements DataPatchInterface
 {
@@ -53,10 +53,10 @@ class AddReturnsEligibilityAttribute implements DataPatchInterface
             Product::ENTITY,
             DataHelper::ATTRIBUTE_CODE_RETURNS_ELIGIBILITY,
             [
-                'label' => 'Exclude from Doddle Returns',
-                'group' => 'Doddle Returns',
-                'note' => 'Products flagged as excluded will not be available to return via Doddle Returns.',
-                'backend' => \Doddle\Returns\Model\Product\Attribute\Backend\Boolean::class,
+                'label' => 'Exclude from Australia Post Returns',
+                'group' => 'Australia Post Returns',
+                'note' => 'Products flagged as excluded will not be available to return via Australia Post Returns.',
+                'backend' => \AustraliaPost\Returns\Model\Product\Attribute\Backend\Boolean::class,
                 'frontend' => '',
                 'input' => 'select',
                 'class' => '',

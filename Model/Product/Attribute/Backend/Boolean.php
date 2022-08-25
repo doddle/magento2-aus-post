@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Model\Product\Attribute\Backend;
+namespace AustraliaPost\Returns\Model\Product\Attribute\Backend;
 
 use Magento\Catalog\Model\Product\Attribute\Source\Boolean as BooleanSource;
 use Magento\Framework\DataObject;

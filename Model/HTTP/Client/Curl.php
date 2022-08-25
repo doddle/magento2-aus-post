@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Doddle\Returns\Model\HTTP\Client;
+namespace AustraliaPost\Returns\Model\HTTP\Client;
 
 use Magento\Framework\HTTP\Client\Curl as CurlClient;
 
