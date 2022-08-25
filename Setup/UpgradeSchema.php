@@ -88,12 +88,6 @@ class UpgradeSchema implements UpgradeSchemaInterface
                 ['unsigned' => true, 'nullable' => false, 'default' => 0],
                 'Count of failed attempts to sync'
             )->addColumn(
-                OrderQueueInterface::DODDLE_ORDER_ID,
-                Table::TYPE_TEXT,
-                null,
-                [],
-                'AustraliaPost Order ID'
-            )->addColumn(
                 OrderQueueInterface::CREATED_AT,
                 Table::TYPE_TIMESTAMP,
                 null,

@@ -7,7 +7,6 @@ interface OrderQueueInterface
     public const ORDER_ID         = 'order_id';
     public const STATUS           = 'status';
     public const FAIL_COUNT       = 'fail_count';
-    public const DODDLE_ORDER_ID  = 'doddle_order_id';
     public const CREATED_AT       = 'created_at';
     public const UPDATED_AT       = 'updated_at';
     public const STATUS_PENDING   = 'pending';
@@ -77,23 +76,6 @@ interface OrderQueueInterface
      * @return $this
      */
     public function setFailCount($failCount);
-
-    /**
-     * Get Doddle order ID
-     *
-     * @return int|null
-     * @deprecated
-     */
-    public function getDoddleOrderId();
-
-    /**
-     * Set Doddle order ID
-     *
-     * @param int $doddleOrderId
-     * @return $this
-     * @deprecated
-     */
-    public function setDoddleOrderId($doddleOrderId);
 
     /**
      * Get created at date

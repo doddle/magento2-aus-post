@@ -84,22 +84,6 @@ class OrderQueue extends AbstractModel implements OrderQueueInterface
     /**
      * @inheritDoc
      */
-    public function getDoddleOrderId()
-    {
-        return $this->getData(self::DODDLE_ORDER_ID);
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public function setDoddleOrderId($doddleOrderId)
-    {
-        return $this->setData(self::DODDLE_ORDER_ID, $doddleOrderId);
-    }
-
-    /**
-     * @inheritDoc
-     */
     public function getCreatedAt()
     {
         return $this->getData(self::CREATED_AT);

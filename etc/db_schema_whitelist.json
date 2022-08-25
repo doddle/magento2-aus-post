@@ -5,7 +5,6 @@
             "order_id": true,
             "status": true,
             "fail_count": true,
-            "doddle_order_id": true,
             "created_at": true,
             "updated_at": true
         },
