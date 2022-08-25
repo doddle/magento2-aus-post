@@ -140,7 +140,7 @@ class Index extends Action implements HttpGetActionInterface
             $orderCollection->addFieldToFilter('main_table.created_at', ['gt' => $dateLimit]);
         }
 
-        // Filter out orders already in the Doddle order queue
+        // Filter out orders already in the Australia Post order queue
         $orderCollection->getSelect()->joinLeft(
             ['order_queue' => $orderCollection->getTable(DataHelper::DB_TABLE_ORDER_QUEUE)],
             'main_table.entity_id = order_queue.order_id',

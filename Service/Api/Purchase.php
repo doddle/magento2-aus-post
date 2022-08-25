@@ -142,7 +142,7 @@ class Purchase
                 'orderLineId' => sprintf('%s%s', $order->getIncrementId(), $orderLine->getItemId()),
                 'productName' => $this->validate->string(substr($orderLine->getName(), 0, self::MAX_NAME_LENGTH)),
                 'productUrl' => $this->getProductUrl($product),
-                'isNotReturnable' => (bool) $product->getData('doddle_returns_excluded'),
+                'isNotReturnable' => (bool) $product->getData(DataHelper::ATTRIBUTE_CODE_RETURNS_ELIGIBILITY),
                 'quantity' => (float) $quantity,
                 'sku' => substr($orderLine->getSku(), 0, self::MAX_SKU_LENGTH)
             ];

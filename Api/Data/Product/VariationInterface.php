@@ -8,7 +8,7 @@ interface VariationInterface
     public const NAME             = 'name';
     public const IMAGE_URL        = 'image_url';
     public const STOCK            = 'stock';
-    public const RETURNS_EXCLUDED = 'doddle_returns_excluded';
+    public const RETURNS_EXCLUDED = 'australiapost_returns_excluded';
     public const ATTRIBUTES       = 'attributes';
 
     /**
