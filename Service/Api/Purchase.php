@@ -478,9 +478,11 @@ class Purchase
         $deliveryData['postcode'] = $this->validate->string($shippingAddress->getPostcode());
         $deliveryData['country'] = $this->validate->string($shippingAddress->getCountryId());
 
-        // Add area to address only if set in Magento order
-        if ($shippingAddress->getRegion()) {
-            $deliveryData['area'] = $shippingAddress->getRegion();
+        // Add area to address only if set in Magento order, give precedence to region code
+        $region = $shippingAddress->getRegion();
+        $regionCode = $shippingAddress->getRegionCode();
+        if ($region || $regionCode) {
+            $deliveryData['area'] = $regionCode ?? $region;
         }
 
         foreach ($shippingAddress->getStreet() as $index => $streetLine) {
