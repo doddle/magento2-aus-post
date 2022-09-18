@@ -2,7 +2,7 @@
     "name": "doddle/magento2-australia-post-returns",
     "description": "Australia Post Returns Magento2 module.",
     "type": "magento2-module",
-    "version": "2.0.1",
+    "version": "2.0.0",
     "license": "proprietary",
     "require": {
         "php": ">=7.1"
