@@ -5,7 +5,7 @@
             <label>Australia Post</label>
         </tab>
         <section id="australiapost_returns" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-            <label>Return Portal Plus</label>
+            <label>Returns Portal Plus</label>
             <tab>australiapost</tab>
             <resource>AustraliaPost_Returns::config</resource>
             <group id="api" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
